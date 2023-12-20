@@ -1,0 +1,1126 @@
+/* style.css */
+
+/* Algemene stijl */
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navigatiebalk */
+nav {
+    background-color: limegreen;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+
+nav h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #ffffff;
+}
+
+nav form {
+    display: flex;
+    align-items: center;
+}
+
+nav input[type="text"] {
+    padding: 6px;
+    width: 900px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-left: 1%;
+}
+
+nav input[type="submit"] {
+    padding: 6px 12px;
+    background-color: #0066cc;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #0066cc;
+}
+
+
+/* Gemeenschaps- en postsecties */
+h2 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+.post {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    width: 80%; /* Aangepast naar 80% van de container */
+    max-width: 600px; /* Maximale breedte van 600px */
+    margin: 0 auto; /* Center de post horizontaal */
+    margin-top: 1%;
+}
+
+.post h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.post p {
+    margin-bottom: 10px;
+    color: #555;
+    font-weight: bold;
+}
+
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.likes {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #888;
+}
+
+.comments {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.comments button {
+    background-color: transparent;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.comments textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0052a3;
+}
+
+/* Responsiviteit */
+@media screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .post {
+        width: 100%; /* Volledige breedte op kleine schermen */
+    }
+}
+.button-container {
+    margin-left:42%;
+    margin-bottom: 20px;
+}
+
+.button {
+
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0052a3;
+}
+.titelpost {
+    margin-left: 47%;
+}
+.sidebar {
+    width: 200px;
+    background-color: #eaeaea; /* Nieuwe achtergrondkleur */
+    padding: 20px;
+    float: left;
+}
+.button-group {
+    margin-top: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 5px;
+}
+
+.button:hover {
+    background-color: #0052a3;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-form {
+    width: 300px;
+    padding: 20px;
+    background-color: orange;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 40%;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+.login-form h1 {
+    text-align: center;
+    color: red;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.login-form .button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: orangered;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-form .button:hover {
+    background-color: red;
+}
+
+.login-form p {
+    text-align: center;
+}
+
+.login-form a {
+    color: red;
+}
+/* Profiel stijl */
+
+.profile-container {
+    max-width: 51.99%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-image: url("");
+}
+
+.profile-title {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-info {
+    margin-bottom: 30px;
+}
+
+.profile-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.profile-value {
+    color: #777;
+}
+
+.profile-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    color: #0066cc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.profile-link:hover {
+    color: #004c99;
+}
+
+.profile-actions {
+    margin-top: 20px;
+}
+
+.profile-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+.profile-button:hover {
+    background-color: #004c99;
+}
+
+@media screen and (max-width: 480px) {
+    .profile-title {
+        font-size: 24px;
+    }
+}
+.sidebar {
+    background-color: #4db4d3;
+    padding: 9px;
+    border-radius: 4px;
+    width: 14.3%;
+}
+
+.sidebar h2 {
+    color: #0052a3;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.sidebar a:hover {
+    background-color: lime;
+}
+
+.sidebar .community-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.sidebar .community-name {
+    font-weight: bold;
+}
+
+.sidebar .button-group {
+    display: flex;
+    gap: 5px;
+    margin-left: auto;
+}
+
+.sidebar .button {
+    background-color: #0066cc;
+    color: #fff;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar .button:hover {
+    background-color: #0052a3;
+}
+.posts {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+.posts h3 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.posts p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.posts img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.posts p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.posts p:first-of-type {
+    margin-top: 0;
+}
+
+.posts p:last-of-type {
+    margin-bottom: 0;
+}
+
+.posts .author {
+    color: #777;
+    font-size: 14px;
+}
+
+.posts .community {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+
+.posts .actions {
+    margin-top: 10px;
+}
+
+.posts .actions a {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 8px 12px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.posts .actions a:hover {
+    background-color: #004b87;
+}
+
+.posts .comments {
+    margin-top: 20px;
+}
+
+.posts .comments button {
+    background-color: transparent;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.posts .comments textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+}
+
+.posts .comments .comment {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.posts .comments .comment:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.posts .comments .comment .author {
+    color: #777;
+    font-size: 14px;
+}
+
+.posts .comments .comment .content {
+    color: #333;
+}
+.like-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+
+
+.like-button:hover {
+    background-color: #004b87;
+}
+
+.update-button,
+.delete-button {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #0066cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.update-button:hover,
+.delete-button:hover {
+    background-color: #004b87;
+}
+
+
+.comments {
+    /* Stijlen voor de reacties */
+}
+
+.comments-hidden {
+    display: none; /* Verberg de reacties door de display-eigenschap op "none" te zetten */
+}
+
+
+
+.button-toggle-comments {
+    background-color: limegreen;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.button-toggle-comments:hover {
+    background-color: lime;
+}
+.comment-form {
+    margin-top: 16px;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 80px;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+}
+
+.comment-form input[type="submit"] {
+    background-color: limegreen;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.comment-form input[type="submit"]:hover {
+    background-color: lime;
+}
+.registration-form {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: #ffd000;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 8%;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.registration-form input[type="text"],
+.registration-form input[type="email"],
+.registration-form input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.registration-form input[type="submit"] {
+    background-color: #ff0000;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.registration-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.registration-form p {
+    color: red;
+}
+.my-community-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #9feeff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10%;
+}
+.my-community-form {
+   margin-top: 8%;
+}
+
+.my-community-form h1 {
+    text-align: center;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.my-community-form label {
+    display: block;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.my-community-form input[type="text"] {
+    width: 94.6%;
+    padding: 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    color: #555;
+}
+
+.my-community-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1bc4f8;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.my-community-form input[type="submit"]:hover {
+    background-color: #063af5;
+}
+
+.my-community-form input[type="submit"]:focus {
+    outline: none;
+}
+
+.my-community-form input[type="submit"]:active {
+    background-color: #3e8940;
+}
+/* CSS */
+.email-profile-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5ae1ee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.algemeen-profile-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #5ae1ee;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.email-profile-container {
+    margin-top: 12%;
+}
+
+.algemeen-profile-container {
+    margin-top: 12%;
+}
+
+.email-profile-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.algemeen-profile-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.email-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.algemeen-form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-update-form {
+    margin-bottom: 10px;
+}
+
+.algemeen-update-form {
+    margin-bottom: 10px;
+}
+
+.email-form-group {
+    margin-bottom: 15px;
+}
+
+.algemeen-form-group {
+    margin-bottom: 15px;
+}
+
+.email-form-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.algemeen-form-label {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.email-form-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.algemeen-form-input {
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.email-form-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.algemeen-form-submit {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0066cc;
+    color: #fff;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.email-form-submit:hover {
+    background-color: #004c99;
+}
+
+.algemeen-form-submit:hover {
+    background-color: #004c99;
+}
+
+/* Verbeterde stijl voor validatie-feedback */
+
+.email-form-input:invalid {
+    border-color: #cc0000;
+}
+
+.algemeen-form-input:invalid {
+    border-color: #cc0000;
+}
+
+.email-form-input:invalid:focus {
+    box-shadow: 0 0 5px #cc0000;
+}
+
+.algemeen-form-input:invalid:focus {
+    box-shadow: 0 0 5px #cc0000;
+}
+
+.email-form-input:valid {
+    border-color: #00cc00;
+}
+
+.algemeen-form-input:valid {
+    border-color: #00cc00;
+}
+
+.email-form-input:valid:focus {
+    box-shadow: 0 0 5px #00cc00;
+}
+
+.algemeen-form-input:valid:focus {
+    box-shadow: 0 0 5px #00cc00;
+}
+.mijn-formulier {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #05ff55;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+}
+.mijn-formulier {
+   margin-top: 8%;
+}
+
+.mijn-formulier button {
+    background-color: #4248de;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.mijn-formulier h1 {
+    text-align: center;
+    color: #333;
+}
+
+.mijn-formulier label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.mijn-formulier input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+.mijn-formulier input[type="submit"] {
+    background-color: #4248de;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.mijn-formulier input[type="submit"]:hover {
+    background-color: #d5e7e4;
+}
+#update-form {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #9bf4ff;
+}
+
+#update-form h1 {
+    text-align: center;
+}
+
+#update-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#update-form input[type="text"],
+#update-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+#update-form textarea {
+    resize: vertical;
+}
+
+#update-form img {
+    max-width: 300px;
+    margin-bottom: 10px;
+}
+
+#update-form input[type="file"] {
+    margin-bottom: 10px;
+}
+
+#update-form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#update-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
+.create-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #7affd8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.create-form h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.create-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.create-form input[type="text"],
+.create-form textarea {
+    width: 95%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.create-form textarea {
+    resize: vertical;
+}
+
+.create-form input[type="file"] {
+    margin-top: 5px;
+}
+
+.create-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.create-form input[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #54cce0;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.create-form input[type="submit"]:hover {
+    background-color: #5998e8;
+}
+.terugknop {
+    background-color: #f5a900;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.terugknop:hover {
+    background-color: #d57600;
+}
+.like-button {
+    display: inline-block;
+    background: none;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+
+.like-button.liked i {
+    color: red;
+}
+
+.like-button:not(.liked) i {
+    color: black;
+}
